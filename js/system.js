@@ -1,0 +1,26 @@
+$(function(){
+     $("#admin").hide();
+     $("#Users").hide() 
+    $("#logout1").hide();
+    $("#logout").hide();
+    $("#his").hide();
+    $("#Users").click(function(){
+        $("#detail").load("html/Users.html")
+    })
+    $("#Product").click(function(){
+        $("#detail").load("html/Menu4.html")
+    })
+    $("#gre").click(function(){
+        $("#detail").load("html/Menu3.html")
+    })
+    $("#b1").click(function(){
+        $("#detail").load("html/Menu2.html")
+    })
+    $("#login").click(function(){
+        $("#detail").load("html/login.html")
+    })
+    $("#register").click(function(){
+        $("#detail").load("html/register.html")
+    })
+
+})

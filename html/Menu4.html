@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card bg-info text-white">
+         <div class="card-header"><i class="fa fa-user-graduate"></i> ขายสินค้า</div>
+    </div> 
+    <div class="card-body"> 
+        <form  id="Product" name="Product">
+            <div class="form-group">
+                <div class="row">
+                            <div class="col-sm-2">
+                                <label for="">วันที่เดือนปี</label>
+                                <input type="date" class="form-control" id="date" name="date" >
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">ชื่อสินค้า</label>
+                                <input type="text" class="form-control" id="prdName" name="prdName" placeholder="ชื่อสินค้า">
+                            </div>
+                            <div class="col-sm-1">
+                                <label for="">ราคา</label>
+                                <input type="number" class="form-control" id="price" name="price" placeholder="ราคา"  min='0'>
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">จำนวน</label>
+                                <input type="number" class="form-control" id="number" name="number" placeholder="จำนวน"  min='0'>
+                            </div>
+                            
+                            <div class="col-sm-2">
+                                <label for="">&nbsp;</label>
+                                <button type="submit" class="btn btn-primary form-control" id="btnOk" >Save</button>
+                            </div>
+                        </div>    
+                
+            </div>
+        </form>
+    </div> 
+    <div class="card-footer"id="showProduct">Footer</div>
+</div>
+
+<script src="js/Menu4.js"></script>

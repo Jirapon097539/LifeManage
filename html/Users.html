@@ -1,0 +1,83 @@
+<div class="card">
+    <div class="card bg-info text-white">
+         <div class="card-header"><i class="fa fa-user-graduate"></i> จัดการสมาชิก  </div>
+    </div> 
+    <div class="card-body"> 
+        <form  id="Users" name="Users">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="">เลขประจำตัวประชาชน</label>
+                                <input type="text" class="form-control" id="pinId" name="pinId" placeholder="เลขประจำตัวประชาชน">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="">Email</label>
+                                <input type="text" class="form-control" id="email" name="email"Required placeholder="Email">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="">Password</label>
+                                <input type="text" class="form-control" id="password" name="password"Required placeholder="Password">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">คำนำหน้า</label>
+                                <select name="prefix" id="prefix" class="form-control">
+                                    <option value="นาย">นาย</option>
+                                    <option value="นางสาว">นางสาว</option>
+                                    <option value="เด็กหญิง">เด็กหญิง</option>
+                                    <option value="เด็กชาย">เด็กชาย</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="">ชื่อ-สกุล</label>
+                                <input type="text" class="form-control" id="FullName" name="FullName"  Required placeholder="ชื่อ-สกุล">
+                            </div>
+                    
+                            <div class="col-sm-4">
+                                <label for="">ที่อยู่</label>
+                                <input type="text" class="form-control" id="address" name="address" Required placeholder="ที่อยู่">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">จังหวัด</label>
+                                <input type="text" class="form-control" id="province" name="province" Required placeholder="จังหวัด">
+                               
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">อำเภอ</label>
+                                <input type="text" class="form-control" id="district" name="district" Required placeholder="อำเภอ">
+                               
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="">ตำบล</label>
+                                <input type="text" class="form-control" id="subDistrict" name="subDistrict" Required placeholder="ตำบล">
+                               
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">รหัสไปรษณีย์</label>
+                                <input type="text" class="form-control" id="zipCode" name="zipCode" placeholder="รหัสไปรษณีย์" >
+                            </div>
+                            <div class="col-sm-2" style="margin-top: 1%;">
+                                <label for="">&nbsp;</label>
+                                <button type="submit" class="btn btn-primary" id="btnOk" >Save</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="card-header bg-info">                                                                                 
+                                <input type="file" class="form-control" name="image" id="image" onchange="preview()" value="">
+                            </div>
+                            <div >
+                                <img id="frame" class="img-thumbnail">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div> 
+    <div class="card-footer" id="showUsers"></div>
+</div>
+
+<script src="js/Users.js"></script>

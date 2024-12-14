@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card bg-info text-white">
+         <div class="card-header"><i class="fa fa-user-graduate"></i> จัดการบัญชี  </div>
+    </div> 
+    <div class="card-body"> 
+        <form  id="b1" name="b1">
+            <div class="form-group">
+                <div class="row">
+                            <div class="col-sm-2">
+                                <label for="">วันเดือนปี</label>
+                                <input type="date" class="form-control" id="date" name="date">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">ประเภทค่าใช้จ่าย</label>
+                                <select name="no1" id="no1" class="form-control">
+                                    <option >กรุณาเลือก</option>
+                                    <option value="รายรับ">รายรับ</option>
+                                    <option value="รายจ่าย">รายจ่าย</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="">จำนวนเงิน</label>
+                                <input type="number" class="form-control" id="nn1" name="nn1"  min='0'>
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="">รายละเอียด</label>
+                                <textarea name="nn2" id="nn2" cols="30" rows="10" placeholder="รายละเอีด" class="form-control"></textarea>
+                               
+                            </div>
+                            <div class="col-sm-1">
+                                <label for="">&nbsp;</label>
+                                <button type="submit" class="btn btn-primary form-control" id="btnOk" >Save</button>
+                            </div>
+                        </div>    
+                
+            </div>
+        </form>
+    </div> 
+    <div class="card-footer"id="showno">Footer</div>
+</div>
+
+<script src="js/Menu2.js"></script>
